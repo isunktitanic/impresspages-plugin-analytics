@@ -1,0 +1,46 @@
+{
+    "title": "Analytics & Tags",
+    "version": "1.0.0",
+    "name": "Analytics",
+    "description": "Google Tag Manager and Google Analytics 4 with a cookie consent banner (Google Consent Mode v2).",
+    "author": "ImpressPages community",
+    "options": [
+        {
+            "label": "Google Tag Manager container ID",
+            "name": "gtmId",
+            "type": "Text",
+            "note": "Looks like GTM-XXXXXXX. Leave empty if you don't use Tag Manager."
+        },
+        {
+            "label": "Google Analytics 4 measurement ID",
+            "name": "ga4Id",
+            "type": "Text",
+            "note": "Looks like G-XXXXXXXXXX. Leave empty if GA4 is set up inside Tag Manager, so visits aren't counted twice."
+        },
+        {
+            "label": "Show cookie consent banner",
+            "name": "consentBanner",
+            "type": "Checkbox",
+            "default": 1,
+            "note": "Tracking stays off until a visitor accepts (Google Consent Mode v2)."
+        },
+        {
+            "label": "Banner text",
+            "name": "consentText",
+            "type": "Textarea",
+            "default": "We use cookies to understand how visitors use this site, so we can improve it."
+        },
+        {
+            "label": "Privacy policy URL",
+            "name": "privacyUrl",
+            "type": "Text",
+            "note": "Optional. Shown as a link in the banner."
+        },
+        {
+            "label": "Don't track logged-in administrators",
+            "name": "skipAdmins",
+            "type": "Checkbox",
+            "default": 1
+        }
+    ]
+}
